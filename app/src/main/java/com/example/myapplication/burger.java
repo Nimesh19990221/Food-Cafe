@@ -2,7 +2,7 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;sd
+import androidx.constraintlayout.widget.ConstraintLayout;s
 
 import android.content.Intent;
 import android.net.Uri;
