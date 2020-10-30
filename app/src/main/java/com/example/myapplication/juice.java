@@ -1,5 +1,5 @@
 package com.example.myapplication;
-sd
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
