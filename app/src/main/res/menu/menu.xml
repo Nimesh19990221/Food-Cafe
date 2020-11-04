@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/set1"
+        android:checkable="false"
+        android:orderInCategory="100"
+        android:title="Setting"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privacy1"
+        android:checkable="false"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/location"
+        android:checkable="false"
+        android:orderInCategory="100"
+        android:title="Location"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/b1"
+        android:checkable="false"
+        android:orderInCategory="100"
+        android:title="Burger"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/j1"
+        android:checkable="false"
+        android:orderInCategory="100"
+        android:title="Juice"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hot1"
+        android:title="Hot Drink"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+</menu>
