@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;fhfhf
+import android.view.View;fhf
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
