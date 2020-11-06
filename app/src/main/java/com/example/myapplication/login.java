@@ -97,10 +97,11 @@ public class login extends AppCompatActivity {
                     pass.requestFocus();
                 }
 
-                else {
+                 else if((Email.equals("nimeshsadaruwn150@gmail.com")&&password.equals("nimesh1999"))||(Email.equals("hasitha98@gmail.com")&&password.equals("hasitha98"))||(Email.equals("navodyadiveyanjali@gmail.com")&&password.equals("navodya1220"))||(Email.equals("piumimalshani1999@gmail.com")&&password.equals("malshani2244"))||(Email.equals("pamudunimithika99@gmail.com")&&password.equals("mithika20"))||(Email.equals("rdrupashinghe@gmail.com")&&password.equals("dulz97")))
+                {
+                    pass.setError("Login Successfully");
                     Intent intent=new Intent(login.this,welcome.class);
                     startActivity(intent);
-
                 }
             }
         });
