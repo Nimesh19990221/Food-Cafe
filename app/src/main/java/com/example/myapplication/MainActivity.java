@@ -116,13 +116,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         if (id == R.id.location) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/place/Sydney+NSW,+Australia/@-33.8469759,150.3715249,9z/data=!3m1!4b1!4m5!3m4!1s0x6b129838f39a743f:0x3017d681632a850!8m2!3d-33.8688197!4d151.2092955"));
-
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(" https://www.google.com/maps/place/Food+cafe/@6.9845798,80.4921303,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae39f2af82c65a3:0xd413fc7421272939!8m2!3d6.9845798!4d80.494319"));
             startActivity(intent);
 
             return true;
         }
-
         if (id == R.id.b1) {
             Toast toast=Toast.makeText(getApplicationContext(),"Firstly...,You have to Signup!",Toast.LENGTH_SHORT);
             toast.show();
