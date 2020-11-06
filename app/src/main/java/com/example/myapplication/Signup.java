@@ -47,7 +47,7 @@ public class Signup extends AppCompatActivity {
 
                     startActivity(intent);
 
-                    return true;
+                    return false;
                 }
 
                 else if (id == R.id.dashboard) {
