@@ -58,7 +58,7 @@ public class burger extends AppCompatActivity {
 
                     startActivity(intent);
 
-                    return false;
+                    return true;
                 }
                 return true;
             }
