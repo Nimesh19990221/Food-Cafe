@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
 
-            return true;
+            return faluse;
         }
         if (id == R.id.privacy1) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.food-cafe.com/privacy-policy/"));
