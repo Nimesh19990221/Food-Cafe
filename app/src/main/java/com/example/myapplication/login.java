@@ -151,7 +151,7 @@ public class login extends AppCompatActivity {
             return true;
         }
          if (id == R.id.location) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(" https://www.google.com/maps/place/Food+cafe/@6.9845798,80.4921303,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae39f2af82c65a3:0xd413fc7421272939!8m2!3d6.9845798!4d80.494319"));
+             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/QgfkFkSaarg1jbts8"));
             startActivity(intent);
 
             return true;
