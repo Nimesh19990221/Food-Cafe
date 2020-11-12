@@ -14,10 +14,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
+    buildType {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFil('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
