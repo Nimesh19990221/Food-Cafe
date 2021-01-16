@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -23,18 +25,8 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="fitStart"
-            android:src="@drawable/ho1" />
-        <Button
-            android:id="@+id/downoad"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@drawable/scrollbg"
-            android:text="Click to Download"
-            android:textColor="#090909"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            />
+            android:src="@drawable/ho1"
+            android:id="@+id/image1"/>
 
         <Button
             android:id="@+id/bur1"
@@ -47,17 +39,8 @@
             android:textSize="17sp"
             android:textStyle="bold"
             />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:adjustViewBounds="true"
-
-            android:scaleType="fitStart"
-            android:src="@drawable/ho2" />
         <Button
-            android:id="@+id/downoad1"
+            android:id="@+id/download"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
@@ -67,6 +50,15 @@
             android:textSize="17sp"
             android:textStyle="bold"
             />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/image2"
+            android:scaleType="fitStart"
+            android:src="@drawable/ho2" />
         <Button
             android:id="@+id/bur2"
             android:layout_width="match_parent"
@@ -78,15 +70,8 @@
             android:textSize="17sp"
             android:textStyle="bold"
             />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitStart"
-            android:src="@drawable/ho3"/>
         <Button
-            android:id="@+id/downoad2"
+            android:id="@+id/download1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
@@ -96,6 +81,14 @@
             android:textSize="17sp"
             android:textStyle="bold"
             />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/ho3"
+            android:id="@+id/image3"/>
         <Button
             android:id="@+id/bur3"
             android:layout_width="match_parent"
@@ -103,6 +96,17 @@
             android:adjustViewBounds="true"
             android:background="@drawable/scrollbg"
             android:text="How To Make"
+            android:textColor="#090909"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/download2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/scrollbg"
+            android:text="Click to Download"
             android:textColor="#090909"
             android:textSize="17sp"
             android:textStyle="bold"
