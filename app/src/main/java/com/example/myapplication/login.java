@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -69,6 +70,7 @@ public class login extends AppCompatActivity {
         pass=(EditText)findViewById(R.id.pass);
         button=(Button)findViewById(R.id.login);
         signup=(TextView)findViewById(R.id.signup);
+        final Loadingdialog loadingdialog=new Loadingdialog(login.this);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,11 +99,17 @@ public class login extends AppCompatActivity {
                     pass.requestFocus();
                 }
 
-                 else if((Email.equals("nimeshsadaruwn150@gmail.com")&&password.equals("nimesh1999"))||(Email.equals("hasitha98@gmail.com")&&password.equals("hasitha98"))||(Email.equals("navodyadiveyanjali@gmail.com")&&password.equals("navodya1220"))||(Email.equals("piumimalshani1999@gmail.com")&&password.equals("malshani2244"))||(Email.equals("pamudunimithika99@gmail.com")&&password.equals("mithika20"))||(Email.equals("rdrupashinghe@gmail.com")&&password.equals("dulz97")))
-                {
-                    pass.setError("Login Successfully");
-                    Intent intent=new Intent(login.this,welcome.class);
-                    startActivity(intent);
+                else {
+                    loadingdialog.startloadingdialog();
+                    Handler handler= new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Intent intent=new Intent(login.this,welcome.class);
+                            startActivity(intent);
+                        }
+                    },5000);
+
                 }
             }
         });
@@ -150,8 +158,14 @@ public class login extends AppCompatActivity {
 
             return true;
         }
-         if (id == R.id.location) {
-             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/QgfkFkSaarg1jbts8"));
+        if (id == R.id.location) {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/QgfkFkSaarg1jbts8"));
+            startActivity(intent);
+
+            return true;
+        }
+        if (id == R.id.search) {
+            Intent intent = new Intent(login.this,search.class);
             startActivity(intent);
 
             return true;
