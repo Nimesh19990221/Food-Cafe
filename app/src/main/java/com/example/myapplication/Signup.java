@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,7 +48,7 @@ public class Signup extends AppCompatActivity {
 
                     startActivity(intent);
 
-                    return false;
+                    return true;
                 }
 
                 else if (id == R.id.dashboard) {
@@ -75,6 +76,7 @@ public class Signup extends AppCompatActivity {
         singup=(Button) findViewById(R.id.signup);
         facebook=(Button)findViewById(R.id.facebook);
         google=(Button)findViewById(R.id.google);
+        final Loadingdialog loadingdialog=new Loadingdialog(Signup.this);
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,6 +96,7 @@ public class Signup extends AppCompatActivity {
         singup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String Email=email.getText().toString();
                 String pass=password.getText().toString();
                 if (firstname.getText().toString().trim().length()==0)
@@ -130,8 +133,15 @@ public class Signup extends AppCompatActivity {
                     password.requestFocus();
                 }
                 else {
-                    Intent intent = new Intent(getApplicationContext(), welcome.class);
-                    startActivity(intent);
+                    loadingdialog.startloadingdialog();
+                    Handler handler= new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Intent intent=new Intent(Signup.this,welcome.class);
+                            startActivity(intent);
+                        }
+                    },5000);
                 }
             }
         });
@@ -170,8 +180,14 @@ public class Signup extends AppCompatActivity {
 
             return true;
         }
-          if (id == R.id.location) {
+        if (id == R.id.location) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/QgfkFkSaarg1jbts8"));
+            startActivity(intent);
+
+            return true;
+        }
+        if (id == R.id.search) {
+            Intent intent = new Intent(Signup.this,search.class);
             startActivity(intent);
 
             return true;
