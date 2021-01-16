@@ -118,8 +118,16 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.location) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/QgfkFkSaarg1jbts8"));
             startActivity(intent);
+
             return true;
         }
+        if (id == R.id.search) {
+            Intent intent = new Intent(MainActivity.this,search.class);
+            startActivity(intent);
+
+            return true;
+        }
+
         if (id == R.id.b1) {
             Toast toast=Toast.makeText(getApplicationContext(),"Firstly...,You have to Signup!",Toast.LENGTH_SHORT);
             toast.show();
